@@ -1,0 +1,37 @@
+# ===========YOU CAN CHANGE THESE PARAMETERS BY YOURSELF============= 
+particle_num: 5000      # Number of Particles
+ray_num: 120             # Number of rays
+occ_threshold: 220      # occupancy threshold
+min_odom_distance: 0.2  # [m] The minial condition to trigger MCL
+min_odom_angle: 20      # [deg] The minial condition to trigger MCL
+
+
+rot2rot_noise: 0.05     # Rotation to Rotation odom noise
+trans2rot_noise: 0.05   # Translation to Rotation odom noise
+trans2trans_noise: 0.02 # Translation to Translation odom noise
+rot2trans_noise: 0.05   # Rotation to Translation odom noise
+
+# The probability coefficient of Ray Casting Sensor Model 
+z_hit: 100
+z_short: 10
+z_max: 10
+z_rand: 50
+sigma_hit: 50
+lambda_short: 20
+
+
+# ========================FREEZED PARAMETERS=========================
+image_resolution: 0.05 # [m] per [pixel]
+image_width: 300       # [pixel] 
+image_height: 300      # [pixel]
+map_center: 
+  x: 0  
+  y: 2                 # [m] Shift the image coordinate to make the map approximately stay in center
+tf_laser2robot:        # Laser frame to robot frame, we need this transformation because the map is built on robot frame
+  rows: 4
+  cols: 4
+  dt: f
+  data: [ -1.0, 0.0, 0.0, 0.2, 
+          0.0, 1.0, 0.0, 0.0, 
+          0.0, 0.0, -1.0, 0.0, 
+          0.0, 0.0, 0.0, 1.0, ] 
