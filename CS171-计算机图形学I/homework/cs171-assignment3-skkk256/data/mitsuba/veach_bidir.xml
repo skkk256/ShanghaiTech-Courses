@@ -1,0 +1,103 @@
+<scene version="0.6.0">
+  <integrator type="bdpt">
+    <integer name="maxDepth" value="32" />
+    <boolean name="strictNormals" value="true" />
+  </integrator>
+  <sensor type="perspective">
+    <float name="fov" value="35" />
+    <transform name="toWorld">
+      <lookAt origin="16.2155, 4.0517, 0.0115" target="15.2155, 4.047, 0.0065" up="-0.0047, 1, 0" />
+    </transform>
+    <sampler type="independent">
+      <integer name="sampleCount" value="512" />
+    </sampler>
+    <film type="hdrfilm">
+      <integer name="width" value="512" />
+      <integer name="height" value="512" />
+      <boolean name="banner" value="false" />
+      <rfilter type="tent" />
+    </film>
+  </sensor>
+  <bsdf type="diffuse" id="Diffuse">
+    <rgb name="reflectance" value="0.5, 0.5, 0.5" />
+  </bsdf>
+  <bsdf type="dielectric" id="Glass">
+    <float name="intIOR" value="1.5" />
+    <float name="extIOR" value="1" />
+  </bsdf>
+  <bsdf type="roughconductor" id="Lamp">
+    <float name="alpha" value="0.25" />
+    <float name="extEta" value="1" />
+    <rgb name="specularReflectance" value="1, 1, 1" />
+    <rgb name="eta" value="2.8656, 2.11918, 1.94008" />
+    <rgb name="k" value="3.03233, 2.05611, 1.61629" />
+  </bsdf>
+  <bsdf type="diffuse" id="Wood">
+    <rgb name="reflectance" value="0.32963, 0.257976, 0.150292" />
+  </bsdf>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLight0.obj" />
+    <emitter type="area">
+      <rgb name="radiance" value="12048.2, 8605.84, 6196.21" />
+    </emitter>
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLight1.obj" />
+    <emitter type="area">
+      <rgb name="radiance" value="523.258, 523.258, 523.258" />
+    </emitter>
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshTabletop.obj" />
+    <boolean name="faceNormals" value="true" />
+    <ref id="Wood" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLamppost.obj" />
+    <ref id="Lamp" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshEgg.obj" />
+    <ref id="Glass" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshTableLeg1.obj" />
+    <ref id="Diffuse" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshTableLeg2.obj" />
+    <ref id="Diffuse" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshTableLeg3.obj" />
+    <ref id="Diffuse" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshTableLeg4.obj" />
+    <ref id="Diffuse" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLightTubeBackcap.obj" />
+    <boolean name="faceNormals" value="true" />
+    <ref id="Diffuse" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLightBase.obj" />
+    <ref id="Lamp" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLightcap.obj" />
+    <boolean name="faceNormals" value="true" />
+    <ref id="Lamp" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshLightTube.obj" />
+    <boolean name="faceNormals" value="true" />
+    <ref id="Diffuse" />
+  </shape>
+  <shape type="obj">
+    <string name="filename" value="../assets/veach-bidir/MeshBound.obj" />
+    <boolean name="faceNormals" value="true" />
+    <ref id="Diffuse" />
+  </shape>
+</scene>

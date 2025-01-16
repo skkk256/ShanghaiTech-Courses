@@ -1,0 +1,185 @@
+{
+  "integrator": {
+    "type": "bdpt",
+    "profile": "MIS",
+    "spp": 512,
+    "rr_threshold": 0.1,
+    "max_depth": 12
+  },
+  "film": {
+    "resolution": [
+      512,
+      512
+    ],
+    "filter": {
+      "type": "gaussian",
+      "radius": 1.2
+    }
+  },
+  "camera": {
+    "position": [
+      16.2155,
+      4.0517,
+      0.0115
+    ],
+    "look_at": [
+      15.2155,
+      4.047,
+      0.0065
+    ],
+    "ref_up": [
+      -0.0047,
+      1,
+      0
+    ],
+    "fov": 35,
+    "focal_length": 1.0
+  },
+  "textures": {
+    "white": {
+      "type": "constant",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "grey": {
+      "type": "constant",
+      "color": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "wood": {
+      "type": "constant",
+      "color": [
+        0.32963,
+        0.257976,
+        0.150292
+      ]
+    }
+  },
+  "materials": {
+    "diffuse": {
+      "type": "diffuse",
+      "texture_name": "grey"
+    },
+    "wood": {
+      "type": "diffuse",
+      "texture_name": "wood"
+    },
+    "glass": {
+      "type": "glass",
+      "eta": 1.5
+    },
+    "lamp": {
+      "type": "roughconductor",
+      "alpha_x": 0.25,
+      "alpha_y": 0.25,
+      "texture_name": "white",
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        2.8656,
+        2.11918,
+        1.94008
+      ],
+      "k": [
+        3.03233,
+        2.05611,
+        1.61629
+      ]
+    }
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshTabletop.obj",
+      "material_name": "wood"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLamppost.obj",
+      "material_name": "lamp"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshEgg.obj",
+      "material_name": "glass"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshTableLeg3.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLightTubeBackcap.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLightbase.obj",
+      "material_name": "lamp"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshTableLeg1.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLightcap.obj",
+      "material_name": "lamp"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLightTube.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshTableLeg4.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshBound.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshTableLeg2.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLight0.obj",
+      "light": {
+        "type": "area",
+        "radiance": [
+          12048.2,
+          8605.84,
+          6196.21
+        ]
+      }
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach-bidir/MeshLight1.obj",
+      "light": {
+        "type": "area",
+        "radiance": [
+          523.258,
+          523.258,
+          523.258
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "integrator": {
+    "type": "photon",
+    "spp": 256,
+    "rr_threshold": 0.1,
+    "max_depth": 64
+  },
+  "film": {
+    "resolution": [
+      256,
+      256
+    ]
+  },
+  "camera": {
+    "position": [
+      0.0,
+      1.0,
+      6.8
+    ],
+    "look_at": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "ref_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 19.5,
+    "focal_length": 1.0
+  },
+  "textures": {
+    "grey": {
+      "type": "constant",
+      "color": [
+        0.725,
+        0.71,
+        0.68
+      ]
+    },
+    "green": {
+      "type": "constant",
+      "color": [
+        0.14,
+        0.45,
+        0.091
+      ]
+    },
+    "red": {
+      "type": "constant",
+      "color": [
+        0.63,
+        0.065,
+        0.05
+      ]
+    }
+  },
+  "materials": {
+    "grey_diffuse": {
+      "type": "diffuse",
+      "texture_name": "grey"
+    },
+    "green_diffuse": {
+      "type": "diffuse",
+      "texture_name": "green"
+    },
+    "red_diffuse": {
+      "type": "diffuse",
+      "texture_name": "red"
+    }
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "path": "assets/cbox/light.obj",
+      "light": {
+        "type": "area",
+        "radiance": [
+          17.0,
+          12.0,
+          5.0
+        ]
+      }
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/left.obj",
+      "material_name": "red_diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/right.obj",
+      "material_name": "green_diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/floor.obj",
+      "material_name": "grey_diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/ceiling.obj",
+      "material_name": "grey_diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/back.obj",
+      "material_name": "grey_diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/short_box.obj",
+      "material_name": "grey_diffuse",
+      "translate": [
+        -0.7,
+        0,
+        0.6
+      ]
+    },
+    {
+      "type": "mesh",
+      "path": "assets/cbox/tall_box.obj",
+      "material_name": "grey_diffuse",
+      "translate": [
+        0.7,
+        0,
+        -0.5
+      ]
+    }
+  ]
+}
+

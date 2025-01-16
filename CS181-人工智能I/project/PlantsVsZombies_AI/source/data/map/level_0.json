@@ -1,0 +1,9 @@
+{
+    "background_type":0,
+    "init_sun_value":500,
+    "choosebar_type":0,
+    "use_default": true,
+    "zombie_list":[
+        {"time":1000, "map_y":2, "name":"Zombie"}
+    ]
+}

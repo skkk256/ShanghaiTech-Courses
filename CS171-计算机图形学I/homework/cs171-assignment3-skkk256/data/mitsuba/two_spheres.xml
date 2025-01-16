@@ -1,0 +1,34 @@
+<scene version="0.6.0">
+  <integrator type="path">
+    <integer name="maxDepth" value="64" />
+  </integrator>
+  <sensor type="perspective">
+    <float name="fov" value="19.5" />
+    <transform name="toWorld">
+      <lookAt origin="0, 1, -6.8" target="0, 1, 0" up="0, 1, 0" />
+    </transform>
+    <film type="hdrfilm">
+      <integer name="width" value="600" />
+      <integer name="height" value="600" />
+      <boolean name="banner" value="false" />
+      <rfilter type="box" />
+    </film>
+    <sampler type="halton">
+      <integer name="sampleCount" value="256" />
+    </sampler>
+  </sensor>
+  <shape type="sphere">
+    <point name="center" x="0" y="1.4" z="0" />
+    <float name="radius" value="0.3" />
+    <emitter type="area">
+      <rgb name="radiance" value="5.0, 5.0, 5.0" />
+    </emitter>
+  </shape>
+  <shape type="sphere">
+    <point name="center" x="0" y="0" z="0" />
+    <float name="radius" value="1.0" />
+    <bsdf type="diffuse">
+      <rgb name="reflectance" value="1.0, 1.0, 1.0" />
+    </bsdf>
+  </shape>
+</scene>

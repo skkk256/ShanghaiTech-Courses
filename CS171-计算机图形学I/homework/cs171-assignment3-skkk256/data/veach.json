@@ -1,0 +1,229 @@
+{
+  "integrator": {
+    "type": "path",
+    "profile": "MIS",
+    "spp": 512,
+    "rr_threshold": 0.1,
+    "max_depth": 12
+  },
+  "film": {
+    "resolution": [
+      720,
+      512
+    ],
+    "filter": {
+      "type": "box",
+      "radius": 0.5
+    }
+  },
+  "camera": {
+    "position": [
+      28.2792,
+      3.5,
+      0.0
+    ],
+    "look_at": [
+      27.2792,
+      3.5,
+      0.0
+    ],
+    "ref_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 20.11429322446647,
+    "focal_length": 1.0
+  },
+  "textures": {
+    "white": {
+      "type": "constant",
+      "color": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "brighter_white": {
+      "type": "constant",
+      "color": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "materials": {
+    "diffuse": {
+      "type": "diffuse",
+      "texture_name": "brighter_white"
+    },
+    "smooth": {
+      "type": "roughconductor",
+      "alpha_x": 0.01,
+      "alpha_y": 0.01,
+      "texture_name": "white",
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    },
+    "glossy": {
+      "type": "roughconductor",
+      "alpha_x": 0.05,
+      "alpha_y": 0.05,
+      "texture_name": "white",
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    },
+    "rough": {
+      "type": "roughconductor",
+      "alpha_x": 0.1,
+      "alpha_y": 0.1,
+      "texture_name": "white",
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    },
+    "superrough": {
+      "type": "roughconductor",
+      "alpha_x": 0.25,
+      "alpha_y": 0.25,
+      "texture_name": "white",
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    }
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "path": "assets/veach/SmoothCube0.obj",
+      "material_name": "smooth"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/GlossyCube1.obj",
+      "material_name": "glossy"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/RoughCube2.obj",
+      "material_name": "rough"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/SuperRoughCube3.obj",
+      "material_name": "superrough"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/DiffuseRectangle0.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/DiffuseRectangle1.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "sphere",
+      "center": [
+        0.0,
+        6.5,
+        -2.8
+      ],
+      "radius": 1.0,
+      "light": {
+        "type": "area",
+        "radiance": [
+          7.59909,
+          7.59909,
+          7.59909
+        ]
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [
+        0.0,
+        6.5,
+        0.0
+      ],
+      "radius": 0.5,
+      "light": {
+        "type": "area",
+        "radiance": [
+          30.3964,
+          30.3964,
+          30.3964
+        ]
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [
+        0.0,
+        6.5,
+        2.7
+      ],
+      "radius": 0.05,
+      "light": {
+        "type": "area",
+        "radiance": [
+          3039.64,
+          3039.64,
+          3039.64
+        ]
+      }
+    }
+  ]
+}

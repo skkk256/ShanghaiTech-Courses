@@ -1,0 +1,63 @@
+{
+  "integrator": {
+    "type": "path",
+    "spp": 256,
+    "profile": "MIS",
+    "rr_threshold": 0.1,
+    "max_depth": 64
+  },
+  "film": {
+    "resolution": [
+      600,
+      600
+    ]
+  },
+  "camera": {
+    "position": [
+      0.0,
+      1.0,
+      6.8
+    ],
+    "look_at": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "ref_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 19.5,
+    "focal_length": 1.0
+  },
+  "materials": {
+    "diffuse": {
+      "type": "diffuse",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "path": "sphere.obj",
+      "translate": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "light": {
+        "type": "area",
+        "radiance": [
+          5.0,
+          5.0,
+          5.0
+        ]
+      }
+    }
+  ]
+}

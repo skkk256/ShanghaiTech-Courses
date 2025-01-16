@@ -1,0 +1,28 @@
+BasedOnStyle: Google
+UseCRLF: false
+UseTab: Never
+PointerAlignment: Right
+DerivePointerAlignment: false
+SortIncludes: CaseSensitive
+  
+AccessModifierOffset: -2
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments: Consecutive
+# AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: true
+  
+AllowAllArgumentsOnNextLine: true
+AllowShortFunctionsOnASingleLine: Inline
+  
+BreakStringLiterals: true
+
+EmptyLineBeforeAccessModifier: Always
+
+IncludeBlocks: Regroup
+IndentGotoLabels: false
+
+FixNamespaceComments: true

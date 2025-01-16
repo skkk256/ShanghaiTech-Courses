@@ -1,0 +1,16 @@
+BasedOnStyle: Google
+
+# Customizations
+InsertNewlineAtEOF: true
+SeparateDefinitionBlocks: Always
+AllowShortBlocksOnASingleLine: true
+
+# Indenting macros like
+#  #define CS171_ALWAYS_INLINE  __host__
+#  #define CS171_NO_DISCARD     __device__
+AlignConsecutiveMacros: true
+
+# Indenting preprocessor directives for complex PP
+IndentPPDirectives: BeforeHash
+PPIndentWidth: 2
+

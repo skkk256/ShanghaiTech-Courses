@@ -1,0 +1,5 @@
+output_resolution   256
+output_file         ./output_fw_two.png
+scene_prefab        4
+step_len            0.001
+integral_method     fw

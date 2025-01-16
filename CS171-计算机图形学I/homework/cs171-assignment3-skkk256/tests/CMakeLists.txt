@@ -1,0 +1,12 @@
+macro(rdr_add_test name)
+  add_executable(${name}_exe ${name}.cpp)
+  target_link_libraries(${name}_exe gtest gtest_main gmock renderer::lib)
+  add_test(${name} ${name}_exe)
+endmacro()
+
+rdr_add_test(math_tests)
+rdr_add_test(texture_tests)
+rdr_add_test(factory_tests)
+rdr_add_test(properties_tests)
+rdr_add_test(integration_tests)
+rdr_add_test(distribution_tests)

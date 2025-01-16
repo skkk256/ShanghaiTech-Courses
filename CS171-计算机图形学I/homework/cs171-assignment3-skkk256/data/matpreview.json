@@ -1,0 +1,219 @@
+{
+  "integrator": {
+    "type": "path",
+    "profile": "MIS",
+    "spp": 512,
+    "rr_threshold": 0.1,
+    "max_depth": 64
+  },
+  "film": {
+    "resolution": [
+      683,
+      512
+    ],
+    "filter": {
+      "type": "gaussian",
+      "radius": 1.2
+    }
+  },
+  "camera": {
+    "position": [
+      3.69558,
+      -3.46243,
+      3.25463
+    ],
+    "look_at": [
+      3.04072,
+      -2.85176,
+      2.80939
+    ],
+    "ref_up": [
+      -0.317366,
+      0.312466,
+      0.895346
+    ],
+    "fov": 28.8415,
+    "focal_length": 1.0
+  },
+  "textures": {
+    "white": {
+      "type": "constant",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "dim_white": {
+      "type": "constant",
+      "color": [
+        0.18,
+        0.18,
+        0.18
+      ]
+    },
+    "envmap": {
+      "type": "image",
+      "path": "assets/matpreview/envmap.exr",
+      "tex_coordinate_generator": {
+        "type": "uvmapping2d",
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "delta": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "checkerboard_texture": {
+      "type": "checkerboard",
+      "tex_coordinate_generator": {
+        "type": "uvmapping2d",
+        "scale": [
+          8.0,
+          8.0
+        ],
+        "delta": [
+          0.0,
+          0.0
+        ]
+      },
+      "color0": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "color1": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    }
+  },
+  "materials": {
+    "Au": {
+      "type": "roughconductor",
+      "alpha_x": 0.0001,
+      "alpha_y": 0.0001,
+      "texture_name": "white",
+      "etaI": [
+        1.0002770424,
+        1.0002770424,
+        1.0002770424
+      ],
+      "etaT": [
+        0.143124,
+        0.374956,
+        1.44248
+      ],
+      "k": [
+        3.98315,
+        2.38572,
+        1.60321
+      ]
+    },
+    "diffuse": {
+      "type": "diffuse",
+      "texture_name": "dim_white"
+    },
+    "checkerboard": {
+      "type": "diffuse",
+      "texture_name": "checkerboard_texture"
+    }
+  },
+  "environment_map": {
+    "texture_name": "envmap",
+    "scale": 3.0,
+    "transform": [
+      0.224951,
+      -1e-06,
+      0.97437,
+      0,
+      0.97437,
+      0,
+      -0.224951,
+      0,
+      8.74228e-14,
+      1,
+      1e-06,
+      8.87,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "path": "assets/matpreview/matpreview_2.obj",
+      "material_name": "Au",
+      "transform": [
+        0.614046,
+        0.614047,
+        0,
+        -1.78814e-07,
+        -0.614047,
+        0.614046,
+        0,
+        2.08616e-07,
+        0,
+        0,
+        0.868393,
+        1.03569,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "type": "mesh",
+      "path": "assets/matpreview/matpreview_1.obj",
+      "material_name": "diffuse",
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0.0252155,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "type": "mesh",
+      "path": "assets/matpreview/matpreview_0.obj",
+      "material_name": "checkerboard",
+      "transform": [
+        3.68332,
+        -3.79806,
+        0,
+        -1.74958,
+        3.79806,
+        3.68332,
+        0,
+        1.43683,
+        0,
+        0,
+        5.29076,
+        -0.0120714,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

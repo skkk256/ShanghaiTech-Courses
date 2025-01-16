@@ -1,0 +1,15 @@
+.DS_Store 
+*.aux 
+*.log 
+*.nav 
+*.out 
+*.snm 
+*.synctex.gz 
+*.toc 
+*.bbl 
+*.blg 
+*.fls 
+*.fdb_latexmk 
+.idea 
+.vscode 
+.vs

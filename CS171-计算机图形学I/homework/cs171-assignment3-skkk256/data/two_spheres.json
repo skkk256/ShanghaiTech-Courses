@@ -1,0 +1,85 @@
+{
+  "integrator": {
+    "type": "path",
+    "spp": 32,
+    "profile": "MIS",
+    "rr_threshold": 0.1,
+    "max_depth": 6
+  },
+  "film": {
+    "resolution": [
+      600,
+      600
+    ],
+    "filter": {
+      "type": "gaussian",
+      "radius": 1.5
+    }
+  },
+  "camera": {
+    "position": [
+      0.0,
+      1.0,
+      6.8
+    ],
+    "look_at": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "ref_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 19.5,
+    "focal_length": 1.0
+  },
+  "textures": {
+    "white": {
+      "type": "constant",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "materials": {
+    "diffuse": {
+      "type": "diffuse",
+      "texture_name": "white"
+    }
+  },
+  "objects": [
+    {
+      "type": "sphere",
+      "path": "assets/veach/sphere_small.obj",
+      "center": [
+        0.0,
+        1.4,
+        0.0
+      ],
+      "radius": 0.3,
+      "light": {
+        "type": "area",
+        "radiance": [
+          5.0,
+          5.0,
+          5.0
+        ]
+      }
+    },
+    {
+      "type": "sphere",
+      "path": "assets/veach/sphere.obj",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "radius": 1.0,
+      "material_name": "diffuse"
+    }
+  ]
+}

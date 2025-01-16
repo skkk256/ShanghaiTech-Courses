@@ -1,0 +1,169 @@
+{
+  "integrator": {
+    "type": "path",
+    "profile": "MIS",
+    "spp": 512,
+    "rr_threshold": 0.1,
+    "max_depth": 64
+  },
+  "film": {
+    "resolution": [
+      320,
+      160
+    ]
+  },
+  "camera": {
+    "position": [
+      28.2792,
+      3.5,
+      0.0
+    ],
+    "look_at": [
+      27.2792,
+      3.5,
+      0.0
+    ],
+    "ref_up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov": 20.11429322446647,
+    "focal_length": 1.0
+  },
+  "materials": {
+    "diffuse": {
+      "type": "diffuse",
+      "color": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "smooth": {
+      "type": "roughconductor",
+      "alpha_x": 0.01,
+      "alpha_y": 0.01,
+      "R": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    },
+    "glossy": {
+      "type": "roughconductor",
+      "alpha_x": 0.05,
+      "alpha_y": 0.05,
+      "R": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    },
+    "rough": {
+      "type": "roughconductor",
+      "alpha_x": 0.1,
+      "alpha_y": 0.1,
+      "R": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    },
+    "superrough": {
+      "type": "roughconductor",
+      "alpha_x": 0.25,
+      "alpha_y": 0.25,
+      "R": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "etaI": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "etaT": [
+        0.200438,
+        0.924033,
+        1.10221
+      ],
+      "k": [
+        3.91295,
+        2.45285,
+        2.14219
+      ]
+    }
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "path": "assets/veach/RoughCube2.obj",
+      "material_name": "rough",
+      "light": {
+        "type": "area",
+        "radiance": [
+          7.59909,
+          7.59909,
+          7.59909
+        ]
+      }
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/DiffuseRectangle0.obj",
+      "material_name": "diffuse"
+    },
+    {
+      "type": "mesh",
+      "path": "assets/veach/DiffuseRectangle1.obj",
+      "material_name": "diffuse"
+    }
+  ]
+}

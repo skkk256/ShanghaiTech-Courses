@@ -1,0 +1,5 @@
+output_resolution   512
+output_file         ./output_fw_porous_surf.png
+scene_prefab        3
+step_len            0.0005
+integral_method     fw

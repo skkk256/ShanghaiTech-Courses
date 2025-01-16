@@ -1,0 +1,5 @@
+output_resolution   512
+output_file         ./output_fw_genus2.png
+scene_prefab        1
+step_len            0.001
+integral_method     fw
