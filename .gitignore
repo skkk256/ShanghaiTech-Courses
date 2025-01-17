@@ -4,6 +4,7 @@ build/
 out/
 bin/
 obj/
+**/__pycache__
 
 *.log
 *.swp

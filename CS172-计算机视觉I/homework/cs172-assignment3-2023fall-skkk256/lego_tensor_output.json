@@ -1,0 +1,17 @@
+{
+  "experiment_name": "lego",
+  "method_name": "tensorf",
+  "checkpoint": "outputs/lego/tensorf/2023-12-30_201325/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 32.688568115234375,
+    "psnr_std": 1.3480466604232788,
+    "ssim": 0.9654632210731506,
+    "ssim_std": 0.00495939189568162,
+    "lpips": 0.020292358472943306,
+    "lpips_std": 0.00402124272659421,
+    "num_rays_per_sec": 217321.578125,
+    "num_rays_per_sec_std": 146016.453125,
+    "fps": 0.3395649492740631,
+    "fps_std": 0.22815071046352386
+  }
+}

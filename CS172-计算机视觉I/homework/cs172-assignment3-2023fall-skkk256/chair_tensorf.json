@@ -1,0 +1,17 @@
+{
+  "experiment_name": "chair",
+  "method_name": "tensorf",
+  "checkpoint": "outputs/chair/tensorf/2023-12-30_232117/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 23.95982551574707,
+    "psnr_std": 2.518390417098999,
+    "ssim": 0.7228644490242004,
+    "ssim_std": 0.05676291510462761,
+    "lpips": 0.461590051651001,
+    "lpips_std": 0.05689200386404991,
+    "num_rays_per_sec": 299029.90625,
+    "num_rays_per_sec_std": 22536.404296875,
+    "fps": 0.43262431025505066,
+    "fps_std": 0.032604750245809555
+  }
+}

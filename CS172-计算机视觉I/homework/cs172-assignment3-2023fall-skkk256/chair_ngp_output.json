@@ -1,0 +1,17 @@
+{
+  "experiment_name": "chair",
+  "method_name": "instant-ngp",
+  "checkpoint": "outputs/chair/instant-ngp/2023-12-30_223954/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 25.481481552124023,
+    "psnr_std": 2.0878658294677734,
+    "ssim": 0.7980666756629944,
+    "ssim_std": 0.05409826338291168,
+    "lpips": 0.2676672041416168,
+    "lpips_std": 0.04451480135321617,
+    "num_rays_per_sec": 311024.0625,
+    "num_rays_per_sec_std": 64985.3828125,
+    "fps": 0.44997692108154297,
+    "fps_std": 0.09401819854974747
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_name": "seq04",
+  "method_name": "instant-ngp",
+  "checkpoint": "outputs/seq04/instant-ngp/2023-12-30_225402/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 33.06938552856445,
+    "psnr_std": 3.5836026668548584,
+    "ssim": 0.9724555015563965,
+    "ssim_std": 0.004874514415860176,
+    "lpips": 0.1036534383893013,
+    "lpips_std": 0.015843253582715988,
+    "num_rays_per_sec": 603064.5625,
+    "num_rays_per_sec_std": 79128.5625,
+    "fps": 1.1633189916610718,
+    "fps_std": 0.1526399701833725
+  }
+}

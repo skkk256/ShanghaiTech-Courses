@@ -1,0 +1,17 @@
+{
+  "experiment_name": "table",
+  "method_name": "instant-ngp",
+  "checkpoint": "outputs/table/instant-ngp/2023-12-30_232931/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 21.621522903442383,
+    "psnr_std": 3.6765902042388916,
+    "ssim": 0.842039167881012,
+    "ssim_std": 0.05117728188633919,
+    "lpips": 0.3455386459827423,
+    "lpips_std": 0.10063378512859344,
+    "num_rays_per_sec": 503580.4375,
+    "num_rays_per_sec_std": 73759.0546875,
+    "fps": 0.728559672832489,
+    "fps_std": 0.10671159625053406
+  }
+}

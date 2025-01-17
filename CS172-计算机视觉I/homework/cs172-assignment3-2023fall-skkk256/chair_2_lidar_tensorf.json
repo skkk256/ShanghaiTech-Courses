@@ -1,0 +1,17 @@
+{
+  "experiment_name": "seq04",
+  "method_name": "tensorf",
+  "checkpoint": "outputs/seq04/tensorf/2023-12-31_203135/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 29.030576705932617,
+    "psnr_std": 2.423208475112915,
+    "ssim": 0.8961018133163452,
+    "ssim_std": 0.024140527471899986,
+    "lpips": 0.2941771447658539,
+    "lpips_std": 0.05362536385655403,
+    "num_rays_per_sec": 302753.46875,
+    "num_rays_per_sec_std": 22247.609375,
+    "fps": 0.5840151309967041,
+    "fps_std": 0.042915914207696915
+  }
+}
