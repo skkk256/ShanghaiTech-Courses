@@ -45,5 +45,5 @@ For the programming project, choose a problem which is suitable for parallelizat
 
 ### 考试
 
-期中+期末，期中内容到 cuda 之前；设计和分析一些算法，有手写代码和MSI, OpenMP, cuda的 API 环节, 但是不严格要求代码细节、主要写伪代码
+期中+期末，期中内容到 cuda 之前；设计和分析一些算法，有手写代码和MPI, OpenMP, cuda的 API 环节, 但是不严格要求代码细节、主要写伪代码
 
